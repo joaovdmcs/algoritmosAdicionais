@@ -3,21 +3,24 @@
 
 int main(){
 	
-	double soma;
-	int count, x;
+	double soma, x;
+	int count;
 	printf("Digite as idades:\n");
-	scanf("&i",&x);
+	scanf("%lf",&x);
 	soma = 0;
 	count = 0;
 	
 	while(x>=0){
-		soma = soma + (double)x;
+		soma = soma + x;
 		count++;
-		scanf("&i",&x);
+		scanf("%lf",&x);
 	}
-	if(count=0) printf("IMPOSSIVEL CALCULAR\n");
+	if(count==0) printf("IMPOSSIVEL CALCULAR\n");
 	
-	else printf("MEDIA = %.2lf", (soma/count));
+	
+	
+	else printf("MEDIA = %.2lf\n", (soma/count));
+	
 	
 	return 0;
 }
