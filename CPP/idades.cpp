@@ -12,7 +12,7 @@ int main(){
 	getline(cin, nome1);
 	cout << "Idade: ";
 	cin >> idade1;
-	cin.ignore(INT_MAX, '\n');
+	cin.ignore(INT_MAX, '\n'); // limpeza do buffer.
 	
 	cout << "Dados da segunda pessoa: " << endl;
 	cout << "Nome: ";
