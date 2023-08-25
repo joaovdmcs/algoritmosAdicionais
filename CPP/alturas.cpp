@@ -40,7 +40,7 @@ int main(){
 	}
 	
 	
-	int p = countIdades * (100.0/n);
+	int p = countIdades*100.0/n;
 	cout << fixed << setprecision(1);
 	cout << "Pessoas com menos de 16 anos: " << p << "%" << endl;
 	
