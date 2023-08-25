@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <climits>
 
 using namespace std;
 
@@ -43,7 +44,7 @@ int main(){
 	cout << fixed << setprecision(1);
 	cout << "Pessoas com menos de 16 anos: " << p << "%" << endl;
 	
-	for(int k=0; k<n-1; k++){
+	for(int k=0; k<n; k++){
 		if(idades[k] < 16){cout << nomes[k] << endl;}
 	}
 	
